@@ -26,12 +26,6 @@ chlorophyll_data <- read_csv(here::here("data", "toolik_chlorophyll.csv"), na = 
   rename(chl_a = "active_chl_a_ug_l")
 ```
 
-Renaming a column
-
-```{r}
-
-```
-
 ```{r}
 # dim(chlorophyll_data)
 ```
@@ -39,3 +33,12 @@ Renaming a column
 ```{r}
 # head(chlorophyll_data)
 ```
+
+Histogram
+
+```{r}
+ggplot(data = chlorophyll_data, aes(x = chl_a)) +
+  geom_histogram()
+```
+
+this is "positively skewed" (to the right)
