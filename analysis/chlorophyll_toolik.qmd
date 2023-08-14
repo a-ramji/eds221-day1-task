@@ -1,0 +1,41 @@
+---
+title: "Toolik chlorophyll concentrations"
+author: "Anna Ramji"
+format: html
+execute: 
+  warning: false
+---
+
+# Day 1 Comp 2 & Tasks
+
+## Comp 2
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+## Reading in data
+
+cleaning with clean_names() and rename(new_name = "old_name")
+
+```{r}
+chlorophyll_data <- read_csv(here::here("data", "toolik_chlorophyll.csv"), na = c(".")) |> 
+  janitor::clean_names() |> 
+  rename(chl_a = "active_chl_a_ug_l")
+```
+
+Renaming a column
+
+```{r}
+
+```
+
+```{r}
+# dim(chlorophyll_data)
+```
+
+```{r}
+# head(chlorophyll_data)
+```
