@@ -1,1 +1,3 @@
-# eds221-day1-task
+# EDS 221 Day 1 task
+
+https://allisonhorst.github.io/EDS_221_programming-essentials/activities/day_1_activities.html 
